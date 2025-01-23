@@ -1,4 +1,5 @@
 import React, { useRef, useState } from "react";
+import './_fileUpload.css'
 
 const FileUpload: React.FC = () => {
   const [file, setFile] = useState<File | null> (null);
@@ -34,13 +35,12 @@ const FileUpload: React.FC = () => {
   };
 
   return (
-    <div>
+    <div className="audio-upload-container">
       <input
         type="file"
         accept="audio/*"
         onChange={handleFileChange}
         ref={fileInputRef}
-        style={{ display: "none" }}
         id="audio-upload"
       />
       <label htmlFor="audio-upload">
@@ -56,7 +56,7 @@ const FileUpload: React.FC = () => {
           </button>
         </>
       )}
-      {error && <p style={{ color: "red" }}>{error}</p>}
+      {error && <p className="file-error">{error}</p>}
     </div>
   );
 };

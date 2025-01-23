@@ -1,0 +1,9 @@
+.audio-upload-container {
+  input {
+    display: none;
+  }
+}
+
+.file-error {
+    color: red;
+}
