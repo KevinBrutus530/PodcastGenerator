@@ -1,19 +1,19 @@
-import './App.css';
-import Header from './header/Header';
+import "./App.css";
+import FileUpload from "./FileUpload/FileUpload";
+import Header from "./header/Header";
 
 function App() {
   return (
     <div className="App">
-      <Header/>
+      <Header />
       <div>
         <div>
-          <button>Upload Audio</button>
+          <FileUpload />
           <button>Enter Transcript</button>
         </div>
-        <input type='text'/>
+        <input type="text" />
         <button>Generate Podcast Magic!</button>
       </div>
-    
     </div>
   );
 }
