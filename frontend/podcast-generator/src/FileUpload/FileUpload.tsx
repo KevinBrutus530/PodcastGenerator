@@ -1,9 +1,9 @@
 import React, { useRef, useState } from "react";
 
-const FileUpload = () => {
-  const [file, setFile] = useState(null);
-  const [error, setError] = useState("");
-  const fileInputRef = useRef(null);
+const FileUpload: React.FC = () => {
+  const [file, setFile] = useState<File | null> (null);
+  const [error, setError] = useState<string>("");
+  const fileInputRef = useRef<HTMLInputElement | null>(null);
 
   const handleButtonClick = () => {
     // Simulate a click on the hidden file input

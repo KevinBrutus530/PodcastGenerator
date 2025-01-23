@@ -1,5 +1,5 @@
 import "./App.css";
-import FileUpload from "./FileUpload/FileUpload";
+import FileUpload from "./FileUpload/FileUpload.tsx";
 import Header from "./header/Header";
 
 function App() {
