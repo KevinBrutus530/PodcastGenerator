@@ -1,6 +1,7 @@
 import "./App.css";
-import FileUpload from "./FileUpload/FileUpload.tsx";
-import Header from "./header/Header";
+import EnterTranscript from "./components/RenameTranscript/EnterTranscript.tsx";
+import FileUpload from "./components/FileUpload/FileUpload.tsx";
+import Header from "./components/header/Header.jsx";
 
 function App() {
   return (
@@ -9,9 +10,8 @@ function App() {
       <div>
         <div>
           <FileUpload />
-          <button>Enter Transcript</button>
+          <EnterTranscript/> 
         </div>
-        <input type="text" />
         <button>Generate Podcast Magic!</button>
       </div>
     </div>
