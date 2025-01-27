@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 
 const EnterTranscript: React.FC = () => {
-  const [showTextarea, setShowTextarea] = useState(false);
-  const [transcript, setTranscript] = useState("");
+  const [showTextarea, setShowTextarea] = useState<boolean>(false);
+  const [transcript, setTranscript] = useState<string>("");
 
   const handleButtonClick = () => {
     setShowTextarea((prev) => !prev); // Toggle the display of the textarea
